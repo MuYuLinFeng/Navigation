@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_config"
+    app:startDestination="@id/login_fragment">
+
+    <fragment
+        android:id="@+id/login_fragment"
+        android:name="com.navigation.fragment.LoginFragment">
+        <action
+            android:id="@+id/to_register_fragment"
+            app:destination="@id/register_fragment" />
+        <action
+            android:id="@+id/to_forget_fragment"
+            app:destination="@id/forget_fragment" />
+        <action
+            android:id="@+id/to_agreement_activity"
+            app:destination="@id/agreement_activity" />
+    </fragment>
+    <fragment
+        android:id="@+id/forget_fragment"
+        android:name="com.navigation.fragment.ForgetFragment">
+
+    </fragment>
+    <fragment
+        android:id="@+id/register_fragment"
+        android:name="com.navigation.fragment.RegisterFragment">
+        <action
+            android:id="@+id/to_avatar_verify_fragment"
+            app:destination="@id/avatar_verify_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/avatar_verify_fragment"
+        android:name="com.navigation.fragment.AvatarVerifyFragment">
+
+        <action
+            android:id="@+id/to_login_fragment"
+            app:destination="@id/login_fragment"
+            app:popUpTo="@id/login_fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <activity
+        android:id="@+id/agreement_activity"
+        android:name="com.navigation.AgreementActivity">
+
+    </activity>
+</navigation>
