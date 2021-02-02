@@ -16,6 +16,9 @@
         <action
             android:id="@+id/to_agreement_activity"
             app:destination="@id/agreement_activity" />
+        <action
+            android:id="@+id/to_activity_taobao"
+            app:destination="@id/taobao_activity" />
     </fragment>
     <fragment
         android:id="@+id/forget_fragment"
@@ -44,4 +47,7 @@
         android:name="com.navigation.AgreementActivity">
 
     </activity>
+    <activity
+        android:id="@+id/taobao_activity"
+        android:name="com.navigation.taoobao.TaobaoActivity" />
 </navigation>

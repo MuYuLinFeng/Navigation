@@ -19,6 +19,13 @@
         android:src="@mipmap/ic_launcher"
         android:transitionName="userAvatarTn" />
 
+    <EditText
+        android:id="@+id/regUserNameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:transitionName="userNameTn"
+        android:hint="用户名" />
+
     <Button
         android:id="@+id/toAvatarVerifyBtn"
         android:layout_width="wrap_content"

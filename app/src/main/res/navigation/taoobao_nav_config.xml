@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/taoobao_nav_config"
+    app:startDestination="@id/TIndexFragment">
+
+    <fragment
+        android:id="@+id/TIndexFragment"
+        android:name="com.navigation.taoobao.TIndexFragment"
+        android:label="TIndexFragment" />
+    <fragment
+        android:id="@+id/TOnSellFragment"
+        android:name="com.navigation.taoobao.TOnSellFragment"
+        android:label="TOnSellFragment" />
+    <fragment
+        android:id="@+id/TPocketFragment"
+        android:name="com.navigation.taoobao.TPocketFragment"
+        android:label="TPocketFragment" />
+    <fragment
+        android:id="@+id/TSearchFragment"
+        android:name="com.navigation.taoobao.TSearchFragment"
+        android:label="TSearchFragment" />
+</navigation>

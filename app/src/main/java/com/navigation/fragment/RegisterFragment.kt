@@ -14,13 +14,17 @@ class RegisterFragment : BaseFragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         sharedElementEnterTransition = TransitionInflater.from(requireContext())
-            .inflateTransition(R.transition.shared_image)
+                .inflateTransition(R.transition.shared_image)
     }
 
     override fun initView(rootView: View) {
         super.initView(rootView)
         rootView.toAvatarVerifyBtn.setOnClickListener {
             findNavController().navigate(R.id.to_avatar_verify_fragment)
+        }
+        arguments?.let {
+            val name = it.getString("userName")
+            rootView.regUserNameEt.setText(name)
         }
     }
 }
